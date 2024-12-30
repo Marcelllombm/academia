@@ -1,0 +1,29 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  line-heigth: 1.2;
+  letter-spacing: 0rem;
+  vertical-align: middle;
+}
+
+a {
+  text-decoraton: none;
+}
+a img {
+  border: 0;
+}
+.fontzero {
+  font-size: 0;
+}
+.clear {
+  clear: both;
+}
+:root {
+  --red: #ff383e;
+  --white: #ffffff;
+  --black: #000000;
+}
