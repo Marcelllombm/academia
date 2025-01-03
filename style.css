@@ -15,7 +15,7 @@
 }
 
 a {
-  text-decoraton: none;
+  text-decoration: none;
 }
 a img {
   border: 0;
@@ -37,10 +37,30 @@ a img {
   width: 100%;
 }
 .content {
-  width: 100%;
-  padding: 10px;
+  width: 95%;
+  padding: 2.5%;
+  margin: 0 auto;
 }
-
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tagline {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+mark {
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* HEADER  */
 .bg-header {
   background: no-repeat center center url(img/bg-header.png);
   background-size: cover;
@@ -55,16 +75,95 @@ a img {
   max-height: 90px;
 }
 
-.main-header h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 900;
+.main-header .title {
+  font-size: 3.8rem;
   margin-top: 5rem;
   color: var(--green);
-  text-shadow: 2px 2px 5px rgb(41, 39, 39);
+  text-shadow: -1px -1px 0 rgba(6, 19, 4, 0.5), /* Borda preta */ 1px -1px 0 rgba(6, 19, 4, 0.5),
+    -1px 1px 0 rgba(6, 19, 4, 0.5), 1px 1px 0 rgba(6, 19, 4, 0.5);
 }
 .main-header .fontwhite {
-  font-size: 4rem;
+  font-size: 3.8rem;
   color: var(--white);
   font-weight: 900;
+  text-shadow: none;
+}
+
+/* FLAT */
+
+.main-flat,
+.main-crosstraining {
+  background: var(--green);
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+.main-flat-content .title {
+  font-size: 2.5rem;
+}
+
+.main-flat-content .flat {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.btn-a {
+  width: 100%;
+  max-width: 255px;
+  heigth: 55px;
+  background: var(--black);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  color: var(--white);
+  width: auto;
+  margin: 10px auto;
+}
+
+.main-flat-content a:hover {
+  background: rgb(22, 21, 21);
+}
+
+/* ROUTINES */
+.bg-routines {
+  background: no-repeat center center url(img/bg-routines.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: var(--white);
+}
+.main-routines-content .title {
+  font-size: 2.5rem;
+  color: var(--green);
+  text-shadow: -1px -1px 0 rgba(6, 19, 4, 0.5), /* Borda preta */ 1px -1px 0 rgba(6, 19, 4, 0.5),
+    -1px 1px 0 rgba(6, 19, 4, 0.5), 1px 1px 0 rgba(6, 19, 4, 0.5);
+}
+.routines-right {
+  width: 98%;
+  padding: 2rem 0;
+}
+.routines-right h1 {
+  font-size: 1.5rem;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: -1px -1px 0 rgba(6, 19, 4, 0.5), /* Borda preta */ 1px -1px 0 rgba(6, 19, 4, 0.5),
+    -1px 1px 0 rgba(6, 19, 4, 0.5), 1px 1px 0 rgba(6, 19, 4, 0.5);
+  margin: 10px 0;
+}
+.routines-right p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  font-variant-ligatures: common-ligatures;
+  font-size: 1.2rem;
+}
+/* CROSS TRAINING  */
+.main-crosstraining-content .title {
+  font-size: 2.5rem;
+}
+.main-crosstraining-content .tagline {
+  text-align: justify;
 }
