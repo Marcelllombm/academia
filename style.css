@@ -211,3 +211,12 @@ mark {
   clip-path: polygon(100% 0, 100% 100%, 30% 100%, 0 0);
   object-fit: cover;
 } */
+
+/* FOOTER  */
+.bg-fitclub {
+  background: no-repeat center center url(img/bg-fitclub.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: var(--white);
+}
