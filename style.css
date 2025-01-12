@@ -212,6 +212,11 @@ mark {
   object-fit: cover;
 } */
 
+/* MAPA */
+.map iframe {
+  width: 100%;
+  height: 500px;
+}
 /* FOOTER  */
 .bg-fitclub {
   background: no-repeat center center url(img/bg-fitclub.png);
