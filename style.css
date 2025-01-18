@@ -217,11 +217,40 @@ mark {
   width: 100%;
   height: 500px;
 }
+
 /* FOOTER  */
 .bg-fitclub {
-  background: no-repeat center center url(img/bg-fitclub.png);
+  background: linear-gradient(to bottom, transparent -80%, #000 90%), no-repeat center center url(img/bg-fitclub.png);
   background-size: cover;
   width: 100%;
   height: auto;
   color: var(--white);
+}
+.footer-content .title {
+  font-size: 3.5rem;
+  color: var(--green);
+  text-shadow: -1px -1px 0 rgba(6, 19, 4, 0.5), /* Borda preta */ 1px -1px 0 rgba(6, 19, 4, 0.5),
+    -1px 1px 0 rgba(6, 19, 4, 0.5), 1px 1px 0 rgba(6, 19, 4, 0.5);
+}
+.footer-content li {
+  list-style-type: none;
+}
+
+.footer-content .webmbm {
+  text-align: center;
+  font-size: 0.675rem;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.webmbm a {
+  font-size: 0.675rem;
+  cursor: pointer;
+  color: var(--green);
+}
+
+.webmbm a:hover {
+  background-color: #eeeeee;
+  border-radius: 2px;
+  color: var(--black);
 }
