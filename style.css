@@ -94,7 +94,9 @@ mark {
   height: auto;
   max-height: 90px;
 }
-
+.main-header {
+  padding: 2rem 0;
+}
 .main-header .title {
   font-size: 5rem;
   line-height: 5.5rem;
@@ -134,6 +136,9 @@ mark {
   width: 100%;
   height: auto;
   color: var(--white);
+}
+.main-routines-content {
+  padding: 2rem 0;
 }
 .main-routines-content .title {
   font-size: 3.5rem;
@@ -226,6 +231,9 @@ mark {
   height: auto;
   color: var(--white);
 }
+.footer-content {
+  padding: 2rem 0;
+}
 .footer-content .title {
   font-size: 3.5rem;
   color: var(--green);
@@ -253,4 +261,22 @@ mark {
   background-color: #eeeeee;
   border-radius: 2px;
   color: var(--black);
+}
+
+/*
+Pequenos telefones: 320px - 480px
+Telefones: 481px - 767px
+Tablets: 768px - 1023px
+Desktops: 1024px - 1200px
+Desktops grandes: 1201px +
+*/
+@media (min-width: 480px) {
+  .ft-content-tagline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .ft-content-tagline ul {
+    margin: 5% 3%;
+  }
 }
