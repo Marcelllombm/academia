@@ -266,6 +266,44 @@ mark {
   color: var(--black);
 }
 
+/*ANIMATED STRIP*/
+.animeGreen {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  position: relative;
+}
+.animatedStrip {
+  display: flex;
+  background-color: var(--white);
+  color: var(--black);
+  width: 100vw; /* Largura da viewport */
+  padding: 1vw 0;
+  transform: translateX(0%) rotate(2deg);
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  backface-visibility: hidden;
+  position: absolute;
+  top: -50px;
+  left: -10px;
+}
+.animatedStrip h2 {
+  font-size: clamp(2rem, 2vw, 3vw);
+  animation: animeteStripClub 4s infinite linear;
+  padding-left: 8px;
+}
+.animatedStrip:hover h2 {
+  animation-play-state: paused;
+}
+@keyframes animeteStripClub {
+  0% {
+    transform: translateX(-1%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /*
 Pequenos telefones: 320px - 480px
 Telefones: 481px - 767px
@@ -386,5 +424,13 @@ Desktops grandes: 1201px +
     font-size: 6.5rem;
     line-height: 7.5rem;
     margin: 6rem auto;
+  }
+  .animatedStrip {
+    top: -55px;
+  }
+}
+@media (min-width: 2300px) {
+  .animatedStrip {
+    top: -60px;
   }
 }
