@@ -95,7 +95,7 @@ mark {
   max-height: 90px;
 }
 .main-header {
-  padding: 2rem 0;
+  padding: 2rem 0 5rem 0;
 }
 .main-header .title {
   font-size: 5rem;
@@ -195,6 +195,9 @@ mark {
   position: relative; /* Modificação importante */
   z-index: 1;
   top: 0;
+  animation: toLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 /* 
@@ -265,6 +268,29 @@ mark {
   border-radius: 2px;
   color: var(--black);
 }
+/*ANIMATED HEADER*/
+.animatedHeader {
+  animation: apper linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
 
 /*ANIMATED STRIP*/
 .animeGreen {
@@ -276,7 +302,7 @@ mark {
   display: flex;
   background-color: var(--white);
   color: var(--black);
-  width: 100vw; /* Largura da viewport */
+  width: 99vw; /* Largura da viewport */
   padding: 1vw 0;
   transform: translateX(0%) rotate(2deg);
   border: 0;
@@ -285,7 +311,7 @@ mark {
   backface-visibility: hidden;
   position: absolute;
   top: -50px;
-  left: -10px;
+  left: -1px;
 }
 .animatedStrip h2 {
   font-size: clamp(2rem, 2vw, 3vw);
@@ -304,6 +330,60 @@ mark {
   }
 }
 
+/*ANIMATED ROUTINES*/
+
+.animatedRoutines {
+  animation: apper linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes apper {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/*ANIMATED TO RIGHT*/
+.animatedToRigth {
+  animation: toRight linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/*ANIMATED TO RIGHT*/
+.animatedToLeft {
+  animation: toLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 /*
 Pequenos telefones: 320px - 480px
 Telefones: 481px - 767px
